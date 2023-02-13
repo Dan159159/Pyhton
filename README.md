@@ -52,6 +52,21 @@ match porcentaje:
             print(f"Precio con IVA: {resultado} €")
 ```
 
+## Statemnts for
+```
+
+for i in range(1, 6):
+    print(i)
+```
+
+## Statemnts while
+```
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+```
+
 
  
 
