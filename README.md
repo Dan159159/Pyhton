@@ -32,6 +32,10 @@ else:
 # Statements switch on py
 
 ```
+preSinIva=float(input("Dime el precio SIN IVA: "))
+porcentaje=int(input("Dime el porcentaje de IVA que se quiere aplicar : "))
+mas=(preSinIva*porcentaje)/100
+resultado=preSinIva+mas
 match porcentaje:
 
         case 21:
