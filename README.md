@@ -65,7 +65,7 @@ i = 1
 while i <= 5:
     print(i)
     i +=1
-    # += equals i=1+1
+    # += equals i=i+1
 ```
 
 
