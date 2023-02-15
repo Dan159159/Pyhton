@@ -79,5 +79,30 @@ MiN_REUNION = 4
 ```
 
 
+## Statemnts of List and tuples
+```
+# List are mutable
+mi_lista = [1, 2, "tres", True]
+
+# Tuples are inmutable
+mi_tupla = (1, 2, "tres", True)
+
+Example of tuples
+producto1 = ("Camisa", 24.99, 10)
+producto2 = ("Pantalón", 34.99, 5)
+producto3 = ("Zapatos", 49.99, 2)
+
+productos = [producto1, producto2, producto3]
+
+for producto in productos:
+    print("Nombre: ", producto[0])
+    print("Precio: ", producto[1])
+    print("Cantidad disponible: ", producto[2])
+
+
+
+```
+
+
  
 
