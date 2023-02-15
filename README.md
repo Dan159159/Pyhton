@@ -72,6 +72,12 @@ while i <= 5:
     # += equals i=i+1
 ```
 
+## Statemnts of Max and Min
+```
+MAX_INVITADOS = 5
+MiN_REUNION = 4
+```
+
 
  
 
