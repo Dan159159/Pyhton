@@ -98,11 +98,15 @@ for producto in productos:
     print("Nombre: ", producto[0])
     print("Precio: ", producto[1])
     print("Cantidad disponible: ", producto[2])
-
-
+```
+## Statements of fuction or procedure
 
 ```
-
+def imprimirMensaje():
+  print(f"Primera funcion")
+  
+imprimirMensaje()
+```
 
  
 
