@@ -156,6 +156,31 @@ class Persona:
 # Statements of the inheritance
 
 ```
+class Animal:
+    def __init__(self, nombre, edad):
+        self._nombre = nombre
+        self._edad = edad
+
+    @property
+    def nombre(self):
+        return self._nombre
+
+    @nombre.setter
+    def nombre(self, nuevo_nombre):
+        self._nombre = nuevo_nombre.capitalize()
+
+    @property
+    def edad(self):
+        return self._edad
+
+    @edad.setter
+    def edad(self, nueva_edad):
+        if nueva_edad >= 0:
+            self._edad = nueva_edad
+        else:
+            raise ValueError("La edad no puede ser un número negativo.")
+# This is the inheritance, animal-->dog
+
 class Perro(Animal):
     def __init__(self, nombre, edad, raza):
         super().__init__(nombre, edad)
