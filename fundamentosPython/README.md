@@ -98,7 +98,7 @@ def imprimirMensaje():
   
 imprimirMensaje()
 ```
-## Statements of objects
+## Statements of class
 
 ```
 class User:
@@ -125,6 +125,32 @@ user_1.setEdad(24)
 user_1.setNombre("Xabi")
 user_1.getNombre()
 user_1.getEdad()
+```
+Other option for thec class:
+```
+class Persona:
+    def __init__(self, nombre, edad):
+        self._nombre = nombre
+        self._edad = edad
+    
+    @property
+    def nombre(self):
+        return self._nombre
+    
+    @property
+    def edad(self):
+        return self._edad
+    
+    @nombre.setter
+    def nombre(self, nuevo_nombre):
+        self._nombre = nuevo_nombre
+    
+    @edad.setter
+    def edad(self, nueva_edad):
+        if nueva_edad >= 0:
+            self._edad = nueva_edad
+        else:
+            print("La edad no puede ser un número negativo.")
 ```
  
 
