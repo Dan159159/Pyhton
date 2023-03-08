@@ -98,6 +98,33 @@ def imprimirMensaje():
   
 imprimirMensaje()
 ```
+## Statements of objects
 
+```
+class User:
+    nombre = ""
+    edad=0
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    # Esta funcion es para poder imprimir correctamente la clase
+    def __str__(self):
+        return (f"Nombre: {self.nombre}, Edad: {self.edad}")
+    def setEdad(self, edad):
+        self.edad= edad
+    def getEdad(self):
+        return print(f"{self.edad}")
+    def setNombre(self, nombre):
+        self.nombre= nombre
+    def getNombre(self):
+        return print(f"{self.nombre}")
+
+
+user_1 = User("Carmelo", 2)
+user_1.setEdad(24)
+user_1.setNombre("Xabi")
+user_1.getNombre()
+user_1.getEdad()
+```
  
 
