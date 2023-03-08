@@ -152,5 +152,39 @@ class Persona:
         else:
             print("La edad no puede ser un número negativo.")
 ```
+
+# Statements of the inheritance
+
+```
+class Perro(Animal):
+    def __init__(self, nombre, edad, raza):
+        super().__init__(nombre, edad)
+        self._raza = raza
+
+    @property
+    def raza(self):
+        return self._raza
+
+    @raza.setter
+    def raza(self, nueva_raza):
+        self._raza = nueva_raza.capitalize()
+
+    # Override del método setter de la edad
+    @Animal.edad.setter
+    def edad(self, nueva_edad):
+        if nueva_edad > 20:
+            raise ValueError("Los perros no pueden vivir tanto tiempo.")
+        super(Perro, Perro).edad.__set__(self, nueva_edad)  # llamado al setter de la clase padre
+
+
+# Creamos una instancia de la clase Perro y modificamos sus atributos
+mi_perro = Perro("Fido", 3, "Labrador")
+print(mi_perro.nombre)  # Fido
+mi_perro.nombre = "max"
+print(mi_perro.nombre)  # Max
+mi_perro.edad = 5
+print(mi_perro.edad)  # 5
+mi_perro.edad = 30  # Lanza una excepción ValueError
+```
  
 
