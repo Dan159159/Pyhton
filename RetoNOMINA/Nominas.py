@@ -7,9 +7,6 @@ class Empleado:
     def calcular_salario(self):
         self.__salario *= 1.1
         return round(self.__salario)
-
-    def get_salario(self):
-        return self.__salario
 class Programador (Empleado):
     def __init__(self, nombre, salario, lenguaje_programacion):
         super().__init__(nombre, salario)
